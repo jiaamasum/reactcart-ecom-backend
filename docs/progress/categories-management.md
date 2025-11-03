@@ -1,6 +1,14 @@
-# Categories Management — Placeholder
+# Day 3 — Categories Management
 
-Tracking Day 3 work: categories management.
+Implemented public category product listings by id and slug.
 
-Replace with actual Day 3 changes. Remove before merge or keep as changelog.
+Public
+- GET /api/categories/{categoryId}/products — list by category id
+- GET /api/categories/slug/{slug}/products — list by slug
+
+Filters
+- search: substring on name
+- inStockOnly: true to restrict to stock > 0
+
+Details: see docs/api/products-by-category.md
 
