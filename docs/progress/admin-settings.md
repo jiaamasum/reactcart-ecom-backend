@@ -1,8 +1,14 @@
-# Admin Settings — Placeholder
+# Day 2 — Admin Settings
 
-This placeholder enables an initial draft PR from `admin-settings` into `release`.
+Implemented store, SEO, and currency settings APIs (ADMIN only). Public settings also exposed for storefront.
 
-Suggested timeline: Day 2.
+Admin Endpoints
+- GET/PUT /api/admin/settings/store — store info
+- GET/PUT /api/admin/settings/seo — SEO metadata
+- GET/PUT /api/admin/settings/currency — default currency (ISO 4217)
 
-Replace with Day 2 changes (admin settings). Remove this file before merging, or update with a brief changelog for the feature.
+Public Endpoint
+- GET /api/settings — consolidated settings for storefront
+
+Details and payloads: see docs/api/settings.md
 
