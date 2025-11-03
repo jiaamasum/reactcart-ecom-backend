@@ -1,8 +1,14 @@
-# Admin Profile — Placeholder
+# Day 2 — Admin Profile
 
-This placeholder enables an initial draft PR from `admin-profile` into `release`.
+Implemented admin user management endpoints (requires ADMIN role).
 
-Suggested timeline: Day 2.
+Endpoints
+- GET /api/admin/users — list (filter by role, search)
+- GET /api/admin/users/{id} — details
+- POST /api/admin/users — create admin/customer
+- PATCH /api/admin/users/{id} — update fields, reset password
+- POST /api/admin/users/{id}/ban | /unban — toggle banned
+- POST /api/admin/users/{id}/promote | /demote — change role
 
-Replace with Day 2 changes (admin profile). Remove this file before merging, or update with a brief changelog for the feature.
+Details and payloads: see docs/api/admin-users.md
 
