@@ -1,6 +1,14 @@
-# Authentication & User Profile — Placeholder
+# Day 1 — Authentication & User Profile
 
-This placeholder enables an initial draft PR from `authentication-userprofile` into `release`.
+Implemented JWT-based auth and user profile endpoints.
 
-Replace with Day 1 changes (authentication, user profile). Remove this file before merging, or update with a brief changelog for the feature.
+Endpoints
+- POST /api/auth/register — create account and return accessToken
+- POST /api/auth/login — issue accessToken for valid credentials
+- POST /api/auth/logout — stateless logout (client discards token)
+- POST /api/auth/reset-password — reset with validation
+- GET /api/user-details — current user details (Bearer token)
+- PUT/PATCH /api/user-details — update profile fields
+
+Details and payloads: see docs/api/auth-and-user-details.md
 
